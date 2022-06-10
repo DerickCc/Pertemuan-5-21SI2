@@ -70,9 +70,9 @@ public class App {
                 System.out.println("--------");
                 System.out.print("Masukkan No. Rekening asal: ");
                 String norekAsal = keyboard.next();
-                System.out.print("Masukkan No. Rekening tujuan: ");
-                String norekTujuan = keyboard.next();
                 if(cekNorek(norekAsal,nasabah)>=0){
+                    System.out.print("Masukkan No. Rekening tujuan: ");
+                    String norekTujuan = keyboard.next();
                     if(cekNorek(norekTujuan,nasabah)>=0){
                         norekA = nasabah.get(cekNorek(norekAsal,nasabah));
                         norekT = nasabah.get(cekNorek(norekTujuan,nasabah));
