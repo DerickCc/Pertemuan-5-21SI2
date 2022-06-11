@@ -47,7 +47,7 @@ public class App {
                 System.out.println("-------------------");
                 System.out.print("Masukkan No. Rekening yang ingin didaftarkan: ");
                 String norekDaftar = keyboard.next();
-                if(norekDaftar.length()!=8){
+                if(norekDaftar.length()==7){
                     if(cekNorek(norekDaftar, nasabah)==-1){
                         System.out.print("Masukkan nama pemilik No. Rekening: ");
                         String namaDaftar = keyboard.nextLine();
