@@ -38,9 +38,9 @@ public class App {
             System.out.println("4. Print Data Semua Nasabah");
             System.out.println("5. Keluar");
             System.out.print("Pilihan Anda [1/2/3/4/5] ? ");
-            int pilihan = keyboard.nextInt();
+            String pilihan = keyboard.next();
 
-            if(pilihan==1){
+            if(pilihan.equalsIgnoreCase("1")){
                 clearScreen();
                 System.out.println("-------------------");
                 System.out.println("DAFTAR NO. REKENING");
@@ -63,7 +63,7 @@ public class App {
                     System.out.println("\nNo. rekening harus 7 digit ...");
                 } 
             }
-            else if(pilihan==2){
+            else if(pilihan.equalsIgnoreCase("2")){
                 clearScreen();
                 System.out.println("--------");
                 System.out.println("TRANSFER");
@@ -102,7 +102,7 @@ public class App {
                     System.out.println("No. Rekening asal belum terdaftar...");
                 }
             }
-            else if(pilihan==3){
+            else if(pilihan.equalsIgnoreCase("3")){
                 clearScreen();
                 System.out.println("------------------------");
                 System.out.println("CETAK LOG MUTASI NASABAH");
@@ -123,7 +123,7 @@ public class App {
                     System.out.println("No. Rekening tidak valid...");
                 }    
             }
-            else if(pilihan==4){
+            else if(pilihan.equalsIgnoreCase("4")){
                 clearScreen();
                 System.out.println("------------------------");
                 System.out.println("PRINT DATA SEMUA NASABAH");
@@ -134,7 +134,7 @@ public class App {
                     System.out.println(n);
                 }
             }
-            else if(pilihan==5){
+            else if(pilihan.equalsIgnoreCase("5")){
                 break;
             }
             else{
